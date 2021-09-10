@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Glory:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,600;1,700;1,800&display=swap');
-
+/* 
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Glory', sans-serif;
+*/
 *,
 *::before,
 *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: crosshair;
 }
 
 html, body  {
@@ -29,12 +33,18 @@ span {
     display: grid;
     grid-template: repeat(6, 1fr)/repeat(7, 1fr);
 }
+.day {
+    font-weight: 700;
+}
 .month div:nth-child(8) {
     grid-column: 1/4;
+    background-color: #B0DB7A;
+    color: #f5f5f5;
 }
 .month div:nth-child(8) span {
     font-family: 'Fredoka One', cursive;
-    font-size: 5.5rem;
+    font-size: 6rem;
     font-weight: 800;
+    letter-spacing: 0.5rem;
 }
 
